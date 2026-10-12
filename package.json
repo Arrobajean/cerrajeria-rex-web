@@ -9,14 +9,15 @@
     "node": ">=22"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3201",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3201",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "images": "node scripts/optimize-images.mjs"
+    "images": "node scripts/optimize-images.mjs",
+    "screenshots": "node scripts/screenshots.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
